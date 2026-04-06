@@ -1,0 +1,175 @@
+{
+  "run_id": "alpaca_opt_20260324_235407",
+  "generated_at": "2026-03-24T23:54:08.688572Z",
+  "initial_capital": 10000.0,
+  "qty": 1.0,
+  "constraints": {
+    "min_trades": 1,
+    "min_profit_factor": 1.0,
+    "max_drawdown_pct": 5.0,
+    "drawdown_weight": 1.0,
+    "profit_factor_weight": 0.25,
+    "profit_factor_cap": 5.0
+  },
+  "search_space": {
+    "nw_bandwidths": [
+      8.0
+    ],
+    "nw_mults": [
+      1.0,
+      0.75
+    ],
+    "mkr_bandwidths": [
+      9.0
+    ],
+    "require_confirmation_values": [
+      false
+    ],
+    "require_trend_meter_values": [
+      false
+    ],
+    "require_mkr_alignment_values": [
+      false
+    ],
+    "refine_top_k": 0,
+    "nw_bandwidth_refine_step": 1.0,
+    "nw_mult_refine_step": 0.25,
+    "mkr_bandwidth_refine_step": 1.0
+  },
+  "datasets": [
+    {
+      "symbol": "AAPL",
+      "timeframe": "5Min",
+      "csv_path": "/home/marlon/\u00c1rea de Trabalho/stockmarket_bot/data/cache/alpaca/stocks_AAPL_5Min_20260317T235407Z_20260324T235407Z_iex.csv",
+      "cache_hit": false,
+      "candle_count": 407,
+      "window_start": "2026-03-18T13:30:00Z",
+      "window_end": "2026-03-24T19:55:00Z"
+    }
+  ],
+  "coarse_candidates": 2,
+  "refined_candidates": 0,
+  "trials_evaluated": 2,
+  "eligible_trials": 1,
+  "all_trials_csv_path": "/home/marlon/\u00c1rea de Trabalho/stockmarket_bot/data/optimization/alpaca_opt_20260324_235407/all_trials.csv",
+  "best_params_json_path": "/home/marlon/\u00c1rea de Trabalho/stockmarket_bot/data/optimization/alpaca_opt_20260324_235407/best_params.json",
+  "summary_json_path": "/home/marlon/\u00c1rea de Trabalho/stockmarket_bot/data/optimization/alpaca_opt_20260324_235407/summary.json",
+  "best_eligible_trial": {
+    "stage": "coarse",
+    "symbol": "AAPL",
+    "timeframe": "5Min",
+    "nw_bandwidth": 8.0,
+    "nw_mult": 0.75,
+    "mkr_bandwidth": 9.0,
+    "require_confirmation": false,
+    "require_trend_meter": false,
+    "require_mkr_alignment": false,
+    "total_candles": 407,
+    "action_signals": 82,
+    "filled_orders": 82,
+    "rejected_orders": 0,
+    "total_trades": 41,
+    "winning_trades": 22,
+    "losing_trades": 18,
+    "win_rate": 53.65853658536586,
+    "gross_profit": 7.335000000000008,
+    "gross_loss": -3.4300000000000637,
+    "profit_factor": 2.1384839650145397,
+    "net_profit": 3.9049999999999443,
+    "max_drawdown": 2.274999999999636,
+    "max_drawdown_pct": 0.022744370768231225,
+    "score": 2.164620991253943,
+    "eligible": true,
+    "rejection_reasons": []
+  },
+  "best_overall_trial": {
+    "stage": "coarse",
+    "symbol": "AAPL",
+    "timeframe": "5Min",
+    "nw_bandwidth": 8.0,
+    "nw_mult": 0.75,
+    "mkr_bandwidth": 9.0,
+    "require_confirmation": false,
+    "require_trend_meter": false,
+    "require_mkr_alignment": false,
+    "total_candles": 407,
+    "action_signals": 82,
+    "filled_orders": 82,
+    "rejected_orders": 0,
+    "total_trades": 41,
+    "winning_trades": 22,
+    "losing_trades": 18,
+    "win_rate": 53.65853658536586,
+    "gross_profit": 7.335000000000008,
+    "gross_loss": -3.4300000000000637,
+    "profit_factor": 2.1384839650145397,
+    "net_profit": 3.9049999999999443,
+    "max_drawdown": 2.274999999999636,
+    "max_drawdown_pct": 0.022744370768231225,
+    "score": 2.164620991253943,
+    "eligible": true,
+    "rejection_reasons": []
+  },
+  "best_by_dataset": [
+    {
+      "symbol": "AAPL",
+      "timeframe": "5Min",
+      "best_eligible_trial": {
+        "stage": "coarse",
+        "symbol": "AAPL",
+        "timeframe": "5Min",
+        "nw_bandwidth": 8.0,
+        "nw_mult": 0.75,
+        "mkr_bandwidth": 9.0,
+        "require_confirmation": false,
+        "require_trend_meter": false,
+        "require_mkr_alignment": false,
+        "total_candles": 407,
+        "action_signals": 82,
+        "filled_orders": 82,
+        "rejected_orders": 0,
+        "total_trades": 41,
+        "winning_trades": 22,
+        "losing_trades": 18,
+        "win_rate": 53.65853658536586,
+        "gross_profit": 7.335000000000008,
+        "gross_loss": -3.4300000000000637,
+        "profit_factor": 2.1384839650145397,
+        "net_profit": 3.9049999999999443,
+        "max_drawdown": 2.274999999999636,
+        "max_drawdown_pct": 0.022744370768231225,
+        "score": 2.164620991253943,
+        "eligible": true,
+        "rejection_reasons": []
+      },
+      "best_overall_trial": {
+        "stage": "coarse",
+        "symbol": "AAPL",
+        "timeframe": "5Min",
+        "nw_bandwidth": 8.0,
+        "nw_mult": 0.75,
+        "mkr_bandwidth": 9.0,
+        "require_confirmation": false,
+        "require_trend_meter": false,
+        "require_mkr_alignment": false,
+        "total_candles": 407,
+        "action_signals": 82,
+        "filled_orders": 82,
+        "rejected_orders": 0,
+        "total_trades": 41,
+        "winning_trades": 22,
+        "losing_trades": 18,
+        "win_rate": 53.65853658536586,
+        "gross_profit": 7.335000000000008,
+        "gross_loss": -3.4300000000000637,
+        "profit_factor": 2.1384839650145397,
+        "net_profit": 3.9049999999999443,
+        "max_drawdown": 2.274999999999636,
+        "max_drawdown_pct": 0.022744370768231225,
+        "score": 2.164620991253943,
+        "eligible": true,
+        "rejection_reasons": []
+      }
+    }
+  ]
+}

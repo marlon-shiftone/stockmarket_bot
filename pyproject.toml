@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "stockmarket-bot"
+version = "0.1.0"
+description = "Modular stock signal API with paper trading"
+authors = ["Codex <codex@example.com>"]
+readme = "README.md"
+packages = [
+  { include = "api", from = "src" },
+  { include = "adapters", from = "src" },
+  { include = "core", from = "src" },
+  { include = "indicators", from = "src" },
+  { include = "infra", from = "src" },
+  { include = "rules", from = "src" },
+  { include = "services", from = "src" },
+  { include = "strategies", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = ">=0.116.0,<1.0.0"
+uvicorn = ">=0.35.0,<1.0.0"
+pydantic = ">=2.11.0,<3.0.0"
+httpx = ">=0.28.0,<1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3.0,<9.0.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

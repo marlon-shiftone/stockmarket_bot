@@ -1,0 +1,58 @@
+{
+  "selection_source": "walk_forward",
+  "generated_at": "2026-03-25T00:00:19.985136+00:00",
+  "initial_capital": 10000.0,
+  "qty": 1.0,
+  "constraints": {
+    "min_trades": 1,
+    "min_profit_factor": 1.0,
+    "max_drawdown_pct": 5.0,
+    "drawdown_weight": 1.0,
+    "profit_factor_weight": 0.25,
+    "profit_factor_cap": 5.0
+  },
+  "datasets": [
+    {
+      "symbol": "AAPL",
+      "timeframe": "5Min",
+      "selection_basis": "overall_fallback",
+      "candidate": {
+        "nw_bandwidth": 8.0,
+        "nw_mult": 0.75,
+        "mkr_bandwidth": 9.0,
+        "require_confirmation": false,
+        "require_trend_meter": false,
+        "require_mkr_alignment": false
+      },
+      "metrics": {
+        "windows_evaluated": 4,
+        "eligible_windows": 3,
+        "starting_capital": 10000.0,
+        "ending_capital": 9999.01,
+        "total_trades": 19,
+        "winning_trades": 10,
+        "losing_trades": 9,
+        "win_rate": 52.63157894736842,
+        "gross_profit": 1.674999999999983,
+        "gross_loss": -2.665000000000049,
+        "profit_factor": 0.628517823639757,
+        "net_profit": -0.9900000000000659,
+        "max_drawdown": 1.6999999999989086,
+        "max_drawdown_pct": 0.016999838501523323,
+        "score": -2.532870544089035,
+        "eligible": false,
+        "rejection_reasons": [
+          "profit_factor<1.0"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "walk_forward_config": {
+      "train_size_bars": 200,
+      "test_size_bars": 50,
+      "step_size_bars": 50,
+      "anchored": false
+    }
+  }
+}
